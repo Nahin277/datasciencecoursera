@@ -1,0 +1,24 @@
+---
+title: "Lexical Scoping"
+author: "Kazi Sabbir Ahmad Nahin"
+date: "10/26/2020"
+output: html_document
+---
+
+##makeCacheMatrix Function
+
+makeCacheMatrix<-function(x)
+{ solve(x)}
+
+##cacheSolve Function
+
+cacheSolve<-function(x)
+{
+if(x==makeCacheMatrix(x))
+{solve(x)}
+else
+{ solve(makeCacheMatrix(x))}
+}
+
+
+
